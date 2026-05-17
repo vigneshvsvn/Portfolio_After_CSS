@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form | VigneshKumar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/contact-form.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Get In Touch</h2>
+            <p>Fill out the form below and I'll reach you shortly</p>
+        </div>
+
+        <form id="contactForm" method="POST" action="./index.html">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Priya" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Dharshini" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="age">Age *</label>
+                    <input type="number" id="age" name="age" placeholder="25" min="13" max="120" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="1234567890" required>
+                </div>
+            </div>
+
+            <div class="form-group full">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="pdharshini@example.com" required>
+            </div>
+
+            <div class="form-group full">
+                <label for="reason">Reason *</label>
+                <textarea id="reason" name="reason" placeholder="Tell me why you're contacting..." required></textarea>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn-submit">Submit</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+        </form>
+
+        <div class="back-link">
+            <a href="index.html">← Back to Portfolio</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
